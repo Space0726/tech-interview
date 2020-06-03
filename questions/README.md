@@ -391,6 +391,9 @@
     5. 종료를 서로에게 알림
 
 ### HTTP Method PUT, POST, PATCH 차이점
+- POST: SQL의 CREATE와 같은 기능, 여러번 같은 요청 시 서버 데이터 변경됨
+- PUT: SQL의 UPDATE와 같은 기능, 여러번 같은 요청 시 UPDATE이기 때문에 한번만 데이터 변경됨
+- PATCH: PUT과 같은 UPDATE이지만 PUT은 모든 필드를 변경, PATCH는 일부분만 변경됨
 
 ### ID password 저장법은?
 - password는 해시함수를 돌려 암호화하여 저장
